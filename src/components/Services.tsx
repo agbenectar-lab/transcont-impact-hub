@@ -12,6 +12,9 @@ import {
   Truck
 } from "lucide-react";
 import marineImage from "@/assets/marine-operations.jpg";
+import engineeringImage from "@/assets/engineering-epc.jpg";
+import assetManagementImage from "@/assets/asset-management.jpg";
+import supplyChainImage from "@/assets/supply-chain.jpg";
 
 const Services = () => {
   const services = [
@@ -21,6 +24,7 @@ const Services = () => {
       description: "Turnkey projects from concept to commissioning, backed by innovative financing structures.",
       color: "text-primary",
       bgColor: "bg-primary/10",
+      image: engineeringImage,
       offerings: [
         "Concept & Feasibility Studies",
         "Front-End Engineering Design (FEED)",
@@ -37,6 +41,7 @@ const Services = () => {
       description: "Comprehensive services across operational life from start-up to decommissioning.",
       color: "text-engineering-blue",
       bgColor: "bg-engineering-blue/10",
+      image: assetManagementImage,
       offerings: [
         "Operations & Maintenance (O&M)",
         "Preventive & Predictive Maintenance",
@@ -53,6 +58,7 @@ const Services = () => {
       description: "Comprehensive marine logistics and offshore support services for safe, timely operations.",
       color: "text-marine-blue",
       bgColor: "bg-marine-blue/10",
+      image: marineImage,
       offerings: [
         "Offshore Support Vessels",
         "Cargo & Personnel Transport",
@@ -69,6 +75,7 @@ const Services = () => {
       description: "Integrated procurement solutions with global reach and local expertise.",
       color: "text-primary-dark",
       bgColor: "bg-primary-dark/10",
+      image: supplyChainImage,
       offerings: [
         "Strategic Procurement & Sourcing",
         "Warehousing & Inventory Control",
@@ -100,18 +107,26 @@ const Services = () => {
           {/* Services Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             {services.map((service, index) => (
-              <Card key={index} className="shadow-industrial hover:shadow-elegant transition-all duration-300 group border-0">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className={`p-3 rounded-xl ${service.bgColor} ${service.color}`}>
+              <Card key={index} className="shadow-industrial hover:shadow-elegant transition-all duration-300 group border-0 overflow-hidden">
+                {/* Service Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-overlay opacity-60"></div>
+                  <div className="absolute top-4 left-4">
+                    <div className={`p-3 rounded-xl ${service.bgColor} ${service.color} backdrop-blur-sm bg-white/90`}>
                       {service.icon}
                     </div>
-                    <div className="flex-1">
-                      <CardTitle className="text-xl text-industrial-gray group-hover:text-primary transition-colors">
-                        {service.title}
-                      </CardTitle>
-                    </div>
                   </div>
+                </div>
+
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl text-industrial-gray group-hover:text-primary transition-colors mb-3">
+                    {service.title}
+                  </CardTitle>
                   <p className="text-muted-foreground text-lg">
                     {service.description}
                   </p>
