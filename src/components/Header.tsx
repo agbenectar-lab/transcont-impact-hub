@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,11 +7,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Values", href: "#values" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Values", href: "/values" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -29,23 +30,23 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <Button variant="outline" className="mr-3">
-              Get Quote
+            <Button variant="outline" className="mr-3" asChild>
+              <Link to="/get-quote">Get Quote</Link>
             </Button>
-            <Button className="bg-gradient-primary hover:opacity-90">
-              Contact Us
+            <Button className="bg-gradient-primary hover:opacity-90" asChild>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -70,21 +71,21 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-4 space-y-3">
-                <Button variant="outline" className="w-full">
-                  Get Quote
+                <Button variant="outline" className="w-full" asChild>
+                  <Link to="/get-quote" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
                 </Button>
-                <Button className="w-full bg-gradient-primary hover:opacity-90">
-                  Contact Us
+                <Button className="w-full bg-gradient-primary hover:opacity-90" asChild>
+                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                 </Button>
               </div>
             </nav>
