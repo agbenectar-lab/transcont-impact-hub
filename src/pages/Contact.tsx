@@ -106,7 +106,7 @@ const ContactPage = () => {
                         <div>
                           <h3 className="font-semibold text-lg mb-2">Email</h3>
                           <p className="text-muted-foreground">
-                            info@transcontglobal.com<br />
+                            info@transcontllc.com<br />
                             <span className="text-sm">We typically respond within 24 hours</span>
                           </p>
                         </div>
@@ -202,9 +202,6 @@ const ContactPage = () => {
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-industrial-gray mb-4">
-                Our Service Areas
-              </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Based in Nigeria with operations across Africa and strategic global partnerships.
               </p>
