@@ -123,7 +123,7 @@ const ContactPage = () => {
                         <div>
                           <h3 className="font-semibold text-lg mb-2">Business Hours</h3>
                           <p className="text-muted-foreground">
-                            Monday - Friday: 8:00 AM - 6:00 PM WAT<br />
+                            Monday - Friday: 8:00 AM - 5:00 PM WAT<br />
                             <span className="text-sm">Emergency response available 24/7</span>
                           </p>
                         </div>
