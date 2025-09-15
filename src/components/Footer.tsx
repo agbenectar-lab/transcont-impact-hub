@@ -20,7 +20,6 @@ const Footer = () => {
     "About Us",
     "Our Services", 
     "Company Profile",
-    "Safety & Quality",
     "Careers",
     "Contact"
   ];
