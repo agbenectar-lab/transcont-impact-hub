@@ -45,27 +45,28 @@ const Footer = () => {
                   company powering Africa's industrial growth.
                 </p>
               </div>
-              
+              <h4 className="text-lg font-bold mb-6">Nigerian Office</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary-light flex-shrink-0" />
                   <span className="text-sm text-gray-300">10 Bosun Adekoya Street, Lekki, Lagos, NG</span>
                 </div>
                 <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary-light flex-shrink-0" />
+                  <span className="text-sm text-gray-300">(+234) 809 1888 990</span>
+                </div>
+                <h4 className="text-lg font-bold mb-6">Houston Office</h4>
+                <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary-light flex-shrink-0" />
                   <span className="text-sm text-gray-300">5850 San Felipe, Suite 500 Houston, TX 77057</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary-light flex-shrink-0" />
-                  <span className="text-sm text-gray-300">08091888990</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary-light flex-shrink-0" />
-                  <span className="text-sm text-gray-300">346-464-6120</span>
+                  <span className="text-sm text-gray-300">+1 (346)-464-6120</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-light flex-shrink-0" />
-                  <span className="text-sm text-gray-300">info@transcontglobal.com</span>
+                  <span className="text-sm text-gray-300">info@transcontllc.com</span>
                 </div>
               </div>
             </div>
