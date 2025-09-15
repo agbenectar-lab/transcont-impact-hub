@@ -92,7 +92,6 @@ const Index = () => {
       <main>
         <Hero />
         <Values />
-        <FAQ />
         <FinalCTA />
       </main>
       <Footer />
