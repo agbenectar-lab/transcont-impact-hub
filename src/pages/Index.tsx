@@ -1,7 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import WhatWeDo from "@/components/WhatWeDo";
 import Values from "@/components/Values";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 
@@ -88,8 +91,11 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <About />
         <Values />
+        <WhatWeDo />
+        <Testimonials />
+        <FAQ />
+        <FinalCTA />
       </main>
       <Footer />
     </div>
