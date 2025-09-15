@@ -92,8 +92,6 @@ const Index = () => {
       <main>
         <Hero />
         <Values />
-        <WhatWeDo />
-        <Testimonials />
         <FAQ />
         <FinalCTA />
       </main>
