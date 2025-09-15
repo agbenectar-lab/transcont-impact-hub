@@ -67,7 +67,7 @@ const Services = () => {
         "Customs Clearance",
         "Integrated Logistics Planning"
       ],
-      edge: "IMO and NIMASA compliant solutions ensuring uninterrupted offshore operations."
+      edge: "Safe, reliable, and efficient marine solutions ensuring uninterrupted offshore operations."
     },
     {
       icon: <Package className="h-8 w-8" />,

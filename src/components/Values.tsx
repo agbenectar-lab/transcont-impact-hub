@@ -163,12 +163,6 @@ const Values = () => {
                 <Badge variant="outline" className="text-white border-white hover:bg-white hover:text-industrial-gray px-6 py-2 text-lg font-medium">
                   ISO Certified
                 </Badge>
-                <Badge variant="outline" className="text-white border-white hover:bg-white hover:text-industrial-gray px-6 py-2 text-lg font-medium">
-                  NIMASA Compliant
-                </Badge>
-                <Badge variant="outline" className="text-white border-white hover:bg-white hover:text-industrial-gray px-6 py-2 text-lg font-medium">
-                  NCDMB Approved
-                </Badge>
               </div>
             </div>
           </div>

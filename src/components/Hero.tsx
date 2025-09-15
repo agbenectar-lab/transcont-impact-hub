@@ -57,13 +57,6 @@ const Hero = () => {
               Explore Our Services
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-industrial-gray px-8 py-4 text-lg"
-            >
-              Download Company Profile
-            </Button>
           </div>
         </div>
       </div>

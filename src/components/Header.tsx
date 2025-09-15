@@ -42,9 +42,6 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <Button variant="outline" className="mr-3" asChild>
-              <Link to="/get-quote">Get Quote</Link>
-            </Button>
             <Button className="bg-gradient-primary hover:opacity-90" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
@@ -81,9 +78,6 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
-                <Button variant="outline" className="w-full" asChild>
-                  <Link to="/get-quote" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
-                </Button>
                 <Button className="w-full bg-gradient-primary hover:opacity-90" asChild>
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                 </Button>

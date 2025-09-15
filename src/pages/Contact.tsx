@@ -12,8 +12,7 @@ import {
   Clock,
   Building2,
   Users,
-  Globe,
-  Linkedin
+  Globe
 } from "lucide-react";
 import { useEffect } from "react";
 
@@ -71,10 +70,27 @@ const ContactPage = () => {
                           <Building2 className="w-6 h-6 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-lg mb-2">Headquarters</h3>
+                          <h3 className="font-semibold text-lg mb-2">Nigeria Office</h3>
                           <p className="text-muted-foreground">
-                            Lagos, Nigeria<br />
-                            <span className="text-sm">Serving Africa and global markets</span>
+                            10 Bosun Adekoya Street, Lekki, Lagos, NG<br />
+                            <span className="text-sm">Phone: 08091888990</span>
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-l-4 border-l-engineering-blue">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="p-3 bg-engineering-blue/10 rounded-lg">
+                          <Building2 className="w-6 h-6 text-engineering-blue" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-lg mb-2">USA Office</h3>
+                          <p className="text-muted-foreground">
+                            5850 San Felipe, Suite 500 Houston, TX 77057<br />
+                            <span className="text-sm">Phone: 346-464-6120</span>
                           </p>
                         </div>
                       </div>
@@ -92,23 +108,6 @@ const ContactPage = () => {
                           <p className="text-muted-foreground">
                             info@transcontglobal.com<br />
                             <span className="text-sm">We typically respond within 24 hours</span>
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-l-4 border-l-marine-blue">
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="p-3 bg-marine-blue/10 rounded-lg">
-                          <Linkedin className="w-6 h-6 text-marine-blue" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-lg mb-2">LinkedIn</h3>
-                          <p className="text-muted-foreground">
-                            /company/transcont-global-limited<br />
-                            <span className="text-sm">Connect with us professionally</span>
                           </p>
                         </div>
                       </div>

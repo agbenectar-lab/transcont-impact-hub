@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Services from "@/components/Services";
 import Values from "@/components/Values";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
@@ -61,9 +60,6 @@ const Index = () => {
             "contactType": "customer service",
             "email": "info@transcontglobal.com"
           },
-          "sameAs": [
-            "https://linkedin.com/company/transcont-global-limited"
-          ],
           "service": [
             {
               "@type": "Service",
@@ -93,7 +89,6 @@ const Index = () => {
       <main>
         <Hero />
         <About />
-        <Services />
         <Values />
       </main>
       <Footer />

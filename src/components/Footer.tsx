@@ -4,9 +4,7 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Linkedin, 
   Globe,
-  FileText,
   ArrowRight
 } from "lucide-react";
 
@@ -15,9 +13,7 @@ const Footer = () => {
     "EPC + Financing",
     "Asset Lifecycle Management", 
     "Marine Services",
-    "Supply Chain Management",
-    "Project Management",
-    "Facility Operations"
+    "Supply Chain Management"
   ];
 
   const quickLinks = [
@@ -53,11 +49,19 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary-light flex-shrink-0" />
-                  <span className="text-sm text-gray-300">Lagos, Nigeria</span>
+                  <span className="text-sm text-gray-300">10 Bosun Adekoya Street, Lekki, Lagos, NG</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-primary-light flex-shrink-0" />
+                  <span className="text-sm text-gray-300">5850 San Felipe, Suite 500 Houston, TX 77057</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary-light flex-shrink-0" />
-                  <span className="text-sm text-gray-300">+234 (0) 1234 5678</span>
+                  <span className="text-sm text-gray-300">08091888990</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-primary-light flex-shrink-0" />
+                  <span className="text-sm text-gray-300">346-464-6120</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary-light flex-shrink-0" />
@@ -115,30 +119,6 @@ const Footer = () => {
                   <Mail className="h-4 w-4 mr-2" />
                   Contact Us
                 </Button>
-                
-                <Button variant="outline" className="w-full border-gray-500 text-gray-300 hover:bg-white hover:text-industrial-gray">
-                  <FileText className="h-4 w-4 mr-2" />
-                  Company Profile
-                </Button>
-              </div>
-
-              {/* Social Links */}
-              <div className="mt-6">
-                <h5 className="text-sm font-semibold mb-3">Follow Us</h5>
-                <div className="flex space-x-4">
-                  <a 
-                    href="#" 
-                    className="text-gray-400 hover:text-primary-light transition-colors duration-200"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                  <a 
-                    href="#" 
-                    className="text-gray-400 hover:text-primary-light transition-colors duration-200"
-                  >
-                    <Globe className="h-5 w-5" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
