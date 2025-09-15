@@ -27,7 +27,7 @@ const Services = () => {
       image: engineeringImage,
       offerings: [
         "Concept & Feasibility Studies",
-        "Front-End Engineering Design (FEED)",
+        "Front-End Engineering/Detailed Design (FEED)",
         "Procurement & Vendor Management",
         "Construction Management",
         "Commissioning & Handover",
